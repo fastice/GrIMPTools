@@ -65,4 +65,4 @@ The  notebooks described above using the following Python libraries:
 ## Further Information
 
 These tools were created by Ian Joughin and Scott Henderson at the University of Washington.
-For 
+For further information contact [](file:./Email.png).
