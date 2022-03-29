@@ -40,14 +40,14 @@ The code in these notebooks requires code from three repositories: [grimpfunc](h
 [qgisRremoteNotebook.ipynb](https://github.com/fastice/GrIMPNotebooks/blob/master/qgisRemoteNotebook.ipynb) notebook. These packages are 
 installed automatically with the conda install described above. Otherwise, they can be pip installed directly from their respective github repos (pip >= v22.0.3).
 
-## [GrIMPNoteBooks](https://github.com/fastice/GrIMPNotebooks) [![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/fastice/GrIMPNotebooks/HEAD?urlpath=lab) (click icon to launch binder)
+## [GrIMPNoteBooks](https://github.com/fastice/GrIMPNotebooks) ![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/fastice/GrIMPNotebooks/HEAD?urlpath=lab) (click icon to launch binder)
 
 This repository contains notebooks to demonstrate tools for working with GrIMP data directly from the archive. Specifically the code can be used to:
 - Generate publication plots directly from the [GrIMP products at NSIDC](https://nsidc.org/data/measures/grimp);
 - Create or download *QGIS* project and layer definition definitions files so that GrIMP products can be displayed directly from the NSIDC servers;
 - Subset data and download time series stacks directly to netCDF files. 
 
-## [GrIMPQGISProject](https://gesis.mybinder.org/badge_logo.svg) [![Binder](https://gesis.mybinder.org/v2/gh/fastice/GrIMPQGISProjects/HEAD?urlpath=lab) (click icon to launch binder)
+## [GrIMPQGISProject](https://gesis.mybinder.org/badge_logo.svg) ![Binder](https://gesis.mybinder.org/v2/gh/fastice/GrIMPQGISProjects/HEAD?urlpath=lab) (click icon to launch binder)
 
 This reposititory contains *QGIS* project (.gqs) and layer definition files (.qglr) that allow remote GrIMP products to be directly ingested and viewed in QGIS with no intermediate storage on the local machine.
 
