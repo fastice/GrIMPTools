@@ -35,25 +35,25 @@ Once installation is complete:
 
 It the libraries don't load once the notebook starts to run, check that the **greenlandMapping** kernel is selected from the pulldown in the upper right corner of the screen.
   
-The code in these notebooks requires two code from three repositories: [grimpfunc](https://github.com/fastice/GrIMPfunc),
+The code in these notebooks requires code from three repositories: [grimpfunc](https://github.com/fastice/GrIMPfunc),
 [nisardev](https://github.com/fastice/nisardev), and [grimpqgis](https://github.com/fastice/grimpqgis). The latter is needed only for the
 [qgisRremoteNotebook.ipynb](https://github.com/fastice/GrIMPNotebooks/blob/master/qgisRemoteNotebook.ipynb) notebook. These packages are 
 installed automatically with the conda install described above. Otherwise, they can be pip installed directly from their respective github repos (pip >= v22.0.3).
 
-## [GrIMPNoteBooks](https://github.com/fastice/GrIMPNotebooks) [![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/fastice/GrIMPNotebooks/HEAD?urlpath=lab)
+## [GrIMPNoteBooks](https://github.com/fastice/GrIMPNotebooks) [![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/fastice/GrIMPNotebooks/HEAD?urlpath=lab) (click icon to launch binder)
 
 This repository contains notebooks to demonstrate tools for working with GrIMP data directly from the archive. Specifically the code can be used to:
 - Generate publication plots directly from the [GrIMP products at NSIDC](https://nsidc.org/data/measures/grimp);
 - Create or download *QGIS* project and layer definition definitions files so that GrIMP products can be displayed directly from the NSIDC servers;
 - Subset data and download time series stacks directly to netCDF files. 
 
-## [GrIMPQGISProject](https://github.com/fastice/GrIMPQGISProjects) [![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/fastice/GrIMPQGISProject/HEAD?urlpath=lab)
+## [GrIMPQGISProject](https://github.com/fastice/GrIMPQGISProjects) [![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/fastice/GrIMPQGISProject/HEAD?urlpath=lab) (click icon to launch binder)
 
-This reposititory contains *QGIS* project and layer definition files that allow remote GrIMP products to be directly ingested and viewed in QGIS with no intermeidate storage on the local machine.
+This reposititory contains *QGIS* project (.gqs) and layer definition files (.qglr) that allow remote GrIMP products to be directly ingested and viewed in QGIS with no intermediate storage on the local machine.
 
 These products require a NASA [Earth Data Login](https://urs.earthdata.nasa.gov/), which requires a free registration.
 
-Some minor setup is required to authenticate as described here [**NSIDCLoginNotebook**](https://github.com/fastice/GrIMPNotebooks/blob/master/NSIDCLoginNotebook.ipynb).
+The .qgs and .qlr files in this repository can be run directly by *QGIS*. Some minor setup is required to authenticate as described here [**NSIDCLoginNotebook**](https://github.com/fastice/GrIMPNotebooks/blob/master/NSIDCLoginNotebook.ipynb).
 
 ## Supporting Python Code
 
@@ -65,4 +65,4 @@ The  notebooks described above using the following Python libraries:
 ## Further Information
 
 These tools were created by Ian Joughin and Scott Henderson at the University of Washington.
-For further information contact ![](Email.png).
+For further information or to provide feedback contact: ![](Email.png).
