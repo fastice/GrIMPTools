@@ -1,10 +1,10 @@
 # GrIMPTools
-This readme provides information on tools for working with data from the Greenland Ice Mapping Project, which are archived at [NSIDC](https://nsidc.org/data/measures/grimp).
+This readme provides information on tools for working with data from the Greenland Ice Mapping Project, which are funded by the NASA [MEaSUREs](https://earthdata.nasa.gov/esds/competitive-programs/measures) program and archived at [NSIDC](https://nsidc.org/data/measures/grimp).
 
 The GrIMP project has now archived several TB of image, velocity, elevation, and glacier terminus data at NSIDC, representing a far greater volume than many users are able to store on their laptops or other computers.
-Many studies require only a small subset of these data (e.g., for a particular glacier). As a result, the GrIMP project has developed several tools for accessing and working with the data remotely, eliminating the need for voluminous downloads.
+Many studies require only a small subset of these data (e.g., for a particular glacier). As a result, the GrIMP project has developed several tools for accessing and working with the data remotely, eliminating the need for voluminous downloads in many studies.
 
-The tools are all built from open source python code that is called from Jupyter notebooks. The examples have been structured with default to do much of what the typical user may wish to do, with little or no python knowledge.
+The tools are all built from open source [Python](https://www.python.org) code that is called from [Jupyter](https://jupyter.org) notebooks. The examples have been structured with default parameters to do much of what the typical user may wish to do, with little or no python knowledge.
 
 These tools are distributed across several gitHub repositories, which can be reached by following the links below.
 
@@ -33,12 +33,12 @@ Once installation is complete:
     conda activate greenlandMapping
     jupyter lab
 
-It the libraries don't open once the notebook is open, check that the greenlandMapping kernel is selected from the pulldown in the upper right corner of the screen.
+It the libraries don't load once the notebook starts to run, check that the **greenlandMapping** kernel is selected from the pulldown in the upper right corner of the screen.
   
-The code in these notebooks requires two code from three repositories: [GrIMPfunc](https://github.com/fastice/GrIMPfunc),
+The code in these notebooks requires two code from three repositories: [grimpfunc](https://github.com/fastice/GrIMPfunc),
 [nisardev](https://github.com/fastice/nisardev), and [grimpqgis](https://github.com/fastice/grimpqgis). The latter is needed only for the
 [qgisRremoteNotebook.ipynb](https://github.com/fastice/GrIMPNotebooks/blob/master/qgisRemoteNotebook.ipynb) notebook. These packages are 
-installed automatically with conda install described above.
+installed automatically with the conda install described above. Otherwise, they can be pip installed directly from their respective github repos (pip >= v22.0.3).
 
 ## [GrIMPNoteBooks](https://github.com/fastice/GrIMPNotebooks) [![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/fastice/GrIMPNotebooks/HEAD?urlpath=lab)
 
@@ -47,10 +47,22 @@ This repository contains notebooks to demonstrate tools for working with GrIMP d
 - Create or download *QGIS* project and layer definition definitions files so that GrIMP products can be displayed directly from the NSIDC servers;
 - Subset data and download time series stacks directly to netCDF files. 
 
-## [GrIMPQGISProject](https://github.com/fastice/GrIMPQGISProjects)
+## [GrIMPQGISProject](https://github.com/fastice/GrIMPQGISProjects) [![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/fastice/GrIMPQGISProject/HEAD?urlpath=lab)
 
 This reposititory contains *QGIS* project and layer definition files that allow remote GrIMP products to be directly ingested and viewed in QGIS with no intermeidate storage on the local machine.
 
 These products require a NASA [Earth Data Login](https://urs.earthdata.nasa.gov/), which requires a free registration.
 
 Some minor setup is required to authenticate as described here [**NSIDCLoginNotebook**](https://github.com/fastice/GrIMPNotebooks/blob/master/NSIDCLoginNotebook.ipynb).
+
+## Supporting Python Code
+
+The  notebooks described above using the following Python libraries:
+- [grimpfunc](https://github.com/fastice/GrIMPfunc): Tools to perform NSIDC authentication, Common Metadata Repoository ([CMR](https://earthdata.nasa.gov/eosdis/science-system-description/eosdis-components/cmr)) searches for GrIMP products, and GrIMP product subsetting. (See [GrIMPSubsetterNotebook](https://github.com/fastice/GrIMPNotebooks/blob/master/GrIMPSubsetterNotebook.ipynb) for examples.)
+- [grimpqgis](https://github.com/fastice/grimpqgis): Tools to build automatically build *QGIS* project files and layer definition files for remote access of GrIMP products. (See [qgisRemoteNotebook](https://github.com/fastice/GrIMPNotebooks/blob/master/qgisRemoteNotebook.ipynb) for examples.)
+- [nisardev](https://github.com/fastice/nisardev): Tools for building and manipulating time series stacks of GrIMP image and velocity data. Facillitates saving subsets as NetCDF files. (See working with [workingWithGrIMPImageData](https://github.com/fastice/GrIMPNotebooks/blob/master/workingWithGrIMPImageData.ipynb), [workingWithGrIMPVelocity](https://github.com/fastice/GrIMPNotebooks/blob/master/workingWithGrIMPVelocity.ipynb), and [Flowlines](https://github.com/fastice/GrIMPNotebooks/blob/master/Flowlines.ipynb) for examples.)
+
+## Further Information
+
+These tools were created by Ian Joughin and Scott Henderson at the University of Washington.
+For 
