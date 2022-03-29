@@ -47,7 +47,7 @@ This repository contains notebooks to demonstrate tools for working with GrIMP d
 - Create or download *QGIS* project and layer definition definitions files so that GrIMP products can be displayed directly from the NSIDC servers;
 - Subset data and download time series stacks directly to netCDF files. 
 
-## [GrIMPQGISProject](https://gesis.mybinder.org/badge_logo.svg)(https://gesis.mybinder.org/v2/gh/fastice/GrIMPQGISProjects/HEAD?urlpath=lab) (click icon to launch binder)
+## [GrIMPQGISProject](https://gesis.mybinder.org/badge_logo.svg) [![Binder](https://gesis.mybinder.org/v2/gh/fastice/GrIMPQGISProjects/HEAD?urlpath=lab) (click icon to launch binder)
 
 This reposititory contains *QGIS* project (.gqs) and layer definition files (.qglr) that allow remote GrIMP products to be directly ingested and viewed in QGIS with no intermediate storage on the local machine.
 
