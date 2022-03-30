@@ -1,7 +1,7 @@
 # GrIMPTools
 This readme provides information on and links tools for working with data from the Greenland Ice Mapping Project, which are funded by the NASA [MEaSUREs](https://earthdata.nasa.gov/esds/competitive-programs/measures) program and archived at [NSIDC](https://nsidc.org/data/measures/grimp).
 
-The GrIMP project has now archived several TB of image, velocity, elevation, and glacier terminus data at NSIDC, representing a far greater volume than many users are able to store on their laptops or other computers.
+The Greenland Ice Mapping Project (GrIMP) has now archived several TB of image, velocity, elevation, and glacier terminus data at NSIDC, representing a far greater volume than many users are able to store on their laptops or other computers.
 Many studies require only a small subset of these data (e.g., for a particular glacier). As a result, the GrIMP project has developed several tools for accessing and working with the data remotely, eliminating the need for voluminous downloads in many studies.
 
 The tools are all built from open source [Python](https://www.python.org) code that is called from [Jupyter](https://jupyter.org) notebooks. The examples have been structured with default parameters to do much of what the typical user may wish to do, with little or no python knowledge.
