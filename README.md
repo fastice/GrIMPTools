@@ -6,7 +6,7 @@ Many studies require only a small subset of these data (e.g., for a particular g
 
 The tools are all built from open source [Python](https://www.python.org) code that is called from [Jupyter](https://jupyter.org) notebooks. The examples have been structured with default parameters to do much of what the typical user may wish to do, with little or no python knowledge.
 
-These tools are distributed across several gitHub repositories, which can be reached by following the links below.
+**These tools are distributed across several gitHub repositories, which can be reached by following the links below.**
 
 All tools can be run locally on users machines or run directly, with some limitations, on freely available cloud resources.
 
