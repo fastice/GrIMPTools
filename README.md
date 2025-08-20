@@ -1,4 +1,8 @@
 # GrIMPTools
+
+## News
+These tools stopped working when NSIDC migrated their data to the cloud. As of August 20, 2025 the code has been updated and the notebooks and code all tested using the python 3.12 and the environment file in the binder directory described below.
+
 This readme provides information on and links tools for working with data from the Greenland Ice Mapping Project, which are funded by the NASA [MEaSUREs](https://earthdata.nasa.gov/esds/competitive-programs/measures) program and archived at [NSIDC](https://nsidc.org/data/measures/grimp).
 
 The Greenland Ice Mapping Project (GrIMP) has now archived several TB of image, velocity, elevation, and glacier terminus data at NSIDC, representing a far greater volume than many users are able to store on their laptops or other computers.
